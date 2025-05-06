@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resources - Dr. Luutsa Felix Edwine</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">Dr. Luutsa</div>
+      <button class="nav-toggle" id="nav-toggle">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>    
+  </header>
+
+  <main>
+    <section>
+      <h1>Resources & Publications</h1>
+      <p>Explore Dr. Luutsa’s latest thought pieces, papers, and presentations.</p>
+
+      <div class="resource-list">
+        <div class="resource">
+          <h2><a href="resources/strategic-public-sector-planning.pdf" target="_blank">Strategic Planning in the Public Sector</a></h2>
+          <p>An in-depth paper on aligning institutional missions with development goals and community needs.</p>
+        </div>
+
+        <div class="resource">
+          <h2><a href="resources/devolved-governance-analysis.pdf" target="_blank">Analysis of Devolved Governance Structures in Kenya</a></h2>
+          <p>A policy brief assessing county governance frameworks post-devolution.</p>
+        </div>
+
+        <div class="resource">
+          <h2><a href="resources/leadership-mentorship-guide.pdf" target="_blank">Leadership & Mentorship Framework</a></h2>
+          <p>A guide used in training programs for building ethical, results-oriented leadership in the public sector.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Dr. Luutsa Felix Edwine. All rights reserved.</p>
+  </footer>
+  <script>
+    const toggleBtn = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+  
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>  
+</body>
+</html>

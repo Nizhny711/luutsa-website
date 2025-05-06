@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services - Dr. Luutsa Felix Edwine</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">Dr. Luutsa</div>
+      <button class="nav-toggle" id="nav-toggle">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>    
+  </header>
+
+  <main>
+    <section>
+      <h1>Consulting Services</h1>
+      <p>Dr. Luutsa offers specialized consulting and training services designed to strengthen institutions, empower leaders, and drive impactful change.</p>
+
+      <div class="service-cards">
+        <div class="card">
+          <h2>Organizational Design & Transformation</h2>
+          <p>Redesigning organizational structures, workflows, and cultures to improve efficiency, alignment, and impact.</p>
+        </div>
+
+        <div class="card">
+          <h2>Strategic Planning & Management</h2>
+          <p>Facilitating strategic plans, performance management systems, and organizational goal-setting processes.</p>
+        </div>
+
+        <div class="card">
+          <h2>Governance & Public Sector Reforms</h2>
+          <p>Advising county governments and institutions on governance, decentralization, and administrative reforms.</p>
+        </div>
+
+        <div class="card">
+          <h2>Capacity Building & Leadership Training</h2>
+          <p>Designing and delivering workshops, training sessions, and mentorship programs for institutions and individuals.</p>
+        </div>
+
+        <div class="card">
+          <h2>Research, Monitoring & Evaluation</h2>
+          <p>Conducting impact assessments, policy analysis, and institutional research for evidence-based decisions.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Dr. Luutsa Felix Edwine. All rights reserved.</p>
+  </footer>
+  <script>
+    const toggleBtn = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+  
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>  
+</body>
+</html>

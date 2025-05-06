@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery & Events - Dr. Luutsa Felix Edwine</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">Dr. Luutsa</div>
+      <button class="nav-toggle" id="nav-toggle">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>    
+  </header>
+
+  <main>
+    <section>
+      <h1>Gallery & Events</h1>
+      <p>Snapshots from conferences, leadership forums, academic talks, and community engagements.</p>
+
+      <div class="gallery-grid">
+        <!-- Replace src with actual image filenames in your images/ folder -->
+        <div class="gallery-item">
+          <img src="images/event1.jpg" alt="Dr. Luutsa speaking at a leadership forum" />
+          <p>Leadership Forum 2023 – Nairobi</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/event 2.jpg" alt="Training workshop photo" />
+          <p>Mentee visit</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/event3.jpg" alt="Panel discussion" />
+          <p>Panel Discussion on Public Sector Innovation</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/event4.jpg" alt="University lecture" />
+          <p>Guest Lecture – Moi University</p>
+        </div>
+        <div class="gallery-item">
+          <img src="images/event 5.jpg" alt="Community engagement" />
+          <p>Community Engagement – Local Outreach</p>
+        </div>
+        <!-- Add more items as needed -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Dr. Luutsa Felix Edwine. All rights reserved.</p>
+  </footer>
+  <script>
+    const toggleBtn = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+  
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>  
+</body>
+</html>
+

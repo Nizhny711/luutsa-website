@@ -1,0 +1,488 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background: #003366;
+    padding: 1rem;
+    color: white;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem; /* Add padding for spacing */
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding-left: 0;
+    margin: 0; /* Remove default margin */
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 1rem; /* Add padding for better click area */
+    border-radius: 4px; /* Optional: Add rounded corners */
+  }
+  
+  .nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Add hover effect */
+  }
+  
+  .hero {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #e6f2ff;
+  }
+  /* Section Styles */
+section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    color: #003366;
+    margin-bottom: 1rem;
+  }
+  
+  /* About Preview */
+  .about-preview p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Services */
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .card {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 1rem;
+    border-left: 5px solid #003366;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  /* Projects & CTA */
+  .projects-preview, .cta {
+    text-align: center;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  main ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  main li {
+    margin-bottom: 0.5rem;
+  }
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .service-cards .card {
+    background: white;
+    padding: 1.5rem;
+    border-left: 5px solid #003366;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  }
+  .project-list {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .project {
+    background: white;
+    padding: 1.5rem;
+    border-left: 5px solid #336699;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .gallery-item {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  .resource-list {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .resource {
+    background: white;
+    padding: 1.25rem;
+    border-left: 5px solid #225588;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  .resource h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .resource a {
+    color: #225588;
+    text-decoration: none;
+  }
+  
+  .resource a:hover {
+    text-decoration: underline;
+  }
+  .contact-section {
+    padding: 2rem 0;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .contact-details {
+    flex: 1 1 300px;
+    background: rgb(26, 46, 223);
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .contact-form {
+    flex: 1 1 300px;
+    background: rgb(244, 247, 244);
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form button {
+    margin-top: 1rem;
+    background: #003366;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background: #225588;
+  }
+ /* HERO SECTION */
+.hero {
+  background: linear-gradient(to right, #003366, #004080);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background: white;
+  color: #003366;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background: #eaeaea;
+}
+
+/* CARD GRID SECTION */
+.overview-section {
+  padding: 3rem 2rem;
+  background: #f9f9f9;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-left: 5px solid #003366;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.card a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* PROFILE SECTION */
+.profile-highlight {
+  background: #003366;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.profile-highlight h2 {
+  margin-bottom: 1rem;
+}
+
+.btn-secondary {
+  background: white;
+  color: #003366;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background: #eaeaea;
+}
+ 
+/* GLOBAL TRANSITIONS */
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+/* BUTTON HOVER EFFECTS */
+.btn-primary,
+.btn-secondary {
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* CARD HOVER EFFECT */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* LINK HOVERS */
+.card a:hover,
+.nav-links a:hover {
+  color: #225588;
+  text-decoration: underline;
+}
+/* CONTACT SECTION */
+.contact-section {
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+    color: #003366;
+    text-align: center;
+  }
+  
+  .contact-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-section .subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .contact-details,
+  .contact-form {
+    flex: 1 1 300px;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form button {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #004080;
+    transform: translateY(-2px);
+  }
+  
+  /* FADE-IN ANIMATION */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeInUp 0.8s ease-out;
+  } 
+  
+/* Logo Styling */
+.logo {
+  height: 60px; /* Adjust height as needed */
+  width: auto;
+  display: block;
+  margin: 0 auto; /* Center the logo */
+}
+
+/* FOOTER */
+.site-footer {
+    background: #66644e09;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 4rem
+    font-size: 0.9rem;
+  }
+
+  /* MOBILE NAV - SLIDE IN ANIMATION */
+@media screen and (max-width: 768px) {
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      background: #003366;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transition: max-height 0.4s ease, opacity 0.4s ease;
+    }
+  
+    .nav-links.show {
+      max-height: 500px;
+      opacity: 1;
+    }
+  
+    .nav-links li {
+      text-align: center;
+      padding: 0.7rem 0;
+    }
+  }
