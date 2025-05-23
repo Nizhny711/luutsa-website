@@ -3,80 +3,163 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dr. Luutsa Felix Edwine</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Dr. Luutsa Felix Edwine - Transforming Organizations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="modern-styles.css" />
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
 </head>
 <body>
-  <header class="hero">
+  <header>
     <nav class="navbar">
-      <div class="nav-brand">
-        <img src="images/logo.jpg" alt="Dr. Luutsa Logo" class="logo" />
+      <div class="container">
+        <div class="nav-brand">
+          <img src="images/logo.jpg" alt="Dr. Luutsa Logo" class="logo" />
+        </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
-      <button class="nav-toggle" id="nav-toggle">&#9776;</button>
-      <ul class="nav-links" id="nav-links">
+    </nav>
+  </header>
+
+  <section class="hero-section section-padding">
+    <div class="container">
+      <h1>Transforming Organizations</h1>
+      <p class="sub-headline">Expert consulting in governance, leadership, and strategic development to drive public sector excellence.</p>
+      <a href="contact.html" class="btn btn-accent">Get in Touch <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <main>
+    <section id="about-preview" class="section-padding">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem;">About Dr. Luutsa</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem auto;">Dr. Luutsa Felix Edwine is a renowned expert in organizational systems, governance, and strategic leadership. With a distinguished career spanning academia and hands-on consultancy, he has empowered numerous public sector institutions to achieve transformative results. His work is characterized by a commitment to ethical practices, evidence-based strategies, and sustainable development.</p>
+            <div style="text-align: center;">
+                <a href="about.html" class="btn btn-primary">Learn More About Dr. Luutsa</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section-padding" style="background-color: #E9ECEF;">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 3rem;">Our Services</h2>
+        <div class="card-grid">
+          <div class="card">
+            <i class="fas fa-cogs icon"></i>
+            <h3>Consulting</h3>
+            <p>Strategic advice on organizational development, policy design, and system optimization for public institutions.</p>
+            <a href="services.html#consulting">Explore Consulting →</a>
+          </div>
+          <div class="card">
+            <i class="fas fa-chalkboard-teacher icon"></i>
+            <h3>Training & Capacity Building</h3>
+            <p>Tailored workshops and programs to enhance leadership skills and institutional capabilities.</p>
+            <a href="services.html#training">Discover Training →</a>
+          </div>
+          <div class="card">
+            <i class="fas fa-drafting-compass icon"></i>
+            <h3>Policy Design & Analysis</h3>
+            <p>Expert assistance in crafting and evaluating effective public policies and governance frameworks.</p>
+            <a href="services.html#policy">View Policy Services →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-padding">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 3rem;">Featured Projects</h2>
+        <div class="card-grid">
+          <div class="card">
+            <i class="fas fa-landmark icon"></i>
+            <h3>Institutional Transformation Initiative</h3>
+            <p>Led a comprehensive overhaul of a key government agency, resulting in improved efficiency and service delivery.</p>
+            <a href="projects.html#project1">See Project Details →</a>
+          </div>
+          <div class="card">
+            <i class="fas fa-users icon"></i>
+            <h3>Leadership Development Program</h3>
+            <p>Designed and facilitated a national leadership program for senior public service officials.</p>
+            <a href="projects.html#project2">Learn About the Program →</a>
+          </div>
+          <div class="card">
+            <i class="fas fa-file-alt icon"></i>
+            <h3>Governance Framework Review</h3>
+            <p>Conducted an in-depth review and update of governance protocols for a regional development body.</p>
+            <a href="projects.html#project3">Read the Review →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section-padding" style="background-color: #E9ECEF;">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 3rem;">Knowledge Resources</h2>
+        <div class="card-grid">
+          <div class="card">
+            <i class="fas fa-book-open icon"></i>
+            <h3>Research Papers</h3>
+            <p>Access insightful articles and research on public sector reform and governance best practices.</p>
+            <a href="resources.html#papers">Access Papers →</a>
+          </div>
+          <div class="card">
+            <i class="fas fa-newspaper icon"></i>
+            <h3>Policy Briefs</h3>
+            <p>Concise analysis and recommendations on contemporary governance challenges.</p>
+            <a href="resources.html#briefs">Read Briefs →</a>
+          </div>
+          <div class="card">
+            <i class="fas fa-tools icon"></i>
+            <h3>Practical Toolkits</h3>
+            <p>Downloadable toolkits and guides for implementing strategic changes in your organization.</p>
+            <a href="resources.html#toolkits">Get Toolkits →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="gallery-preview" class="section-padding">
+        <div class="container" style="text-align: center;">
+            <h2>Visual Journey</h2>
+            <p style="max-width: 700px; margin: 0 auto 2rem auto;">Explore photos from workshops, lectures, and governance events that capture the essence of Dr. Luutsa's engagement in the field.</p>
+            <a href="gallery.html" class="btn btn-primary">View Gallery <i class="fas fa-images"></i></a>
+        </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer section-padding" style="padding-bottom: 20px; padding-top: 40px;"> <!-- Adjusted padding for footer -->
+    <div class="container">
+      <p>&copy; 2024 Dr. Luutsa Felix Edwine. All rights reserved.</p>
+      <ul class="footer-nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="resources.html">Resources</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>
-    <div class="hero-content">
-      <h1>Dr. Luutsa Felix Edwine</h1>
-      <p>Organizational Systems Consultant | Governance Expert | Strategic Leadership Coach</p>
-      <a href="contact.html" class="btn-primary">Get in Touch</a>
+      <!-- Optional: Add social media icons here if desired -->
+      <!-- Example:
+      <div class="social-media-links" style="margin-top: 1rem;">
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+      </div>
+      -->
     </div>
-  </header>
-
-  <main>
-    <section class="overview-section">
-      <div class="card-grid">
-        <div class="card">
-          <h3>About</h3>
-          <p>Learn about Dr. Luutsa’s academic and professional journey in leadership and governance.</p>
-          <a href="about.html">Explore →</a>
-        </div>
-
-        <div class="card">
-          <h3>Services</h3>
-          <p>Consulting, training, policy design, and mentorship in public sector systems.</p>
-          <a href="services.html">View Services →</a>
-        </div>
-
-        <div class="card">
-          <h3>Projects</h3>
-          <p>View past assignments and institutional transformation initiatives.</p>
-          <a href="projects.html">See Projects →</a>
-        </div>
-
-        <div class="card">
-          <h3>Resources</h3>
-          <p>Articles, papers, and research insights from years of field experience.</p>
-          <a href="resources.html">Access Resources →</a>
-        </div>
-
-        <div class="card">
-          <h3>Gallery</h3>
-          <p>Photos from workshops, lectures, and governance events.</p>
-          <a href="gallery.html">View Gallery →</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="profile-highlight">
-      <div class="profile-content">
-        <h2>A Trusted Voice in Public Sector Reform</h2>
-        <p>Dr. Luutsa brings deep experience in organizational development, strategic planning, and capacity building. With a passion for ethical leadership, he empowers institutions to perform better for the communities they serve.</p>
-        <a href="about.html" class="btn-secondary">Learn More</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2025 Dr. Luutsa Felix Edwine. All rights reserved.</p>
   </footer>
+
   <script>
     const toggleBtn = document.getElementById('nav-toggle');
     const navLinks = document.getElementById('nav-links');
@@ -84,8 +167,28 @@
     toggleBtn.addEventListener('click', () => {
       navLinks.classList.toggle('show');
     });
+
+    // Smooth scroll for anchor links (optional, as CSS handles it for same-page links)
+    // This script can be enhanced if direct navigation to sections on other pages is needed.
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            // Check if the link is for the current page and has a hash
+            if (this.pathname === window.location.pathname && this.hash) {
+                // Ensure the target element exists
+                const targetElement = document.querySelector(this.hash);
+                if (targetElement) {
+                    e.preventDefault();
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+            // For links to other pages with hashes (e.g., services.html#consulting),
+            // the default browser behavior will handle scrolling after page load.
+            // If pre-scrolling is needed before the target page fully loads its content,
+            // more complex JS would be required, potentially involving localStorage or query params.
+        });
+    });
   </script>  
 </body>
 </html>
-
-

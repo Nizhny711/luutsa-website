@@ -1,0 +1,244 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #F8F9FA;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #2A4B7C;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #B08D57;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Utility Classes */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-padding {
+  padding: 60px 0;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #2A4B7C;
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  background-color: #1E375A; /* Darker blue */
+  transform: translateY(-2px);
+}
+
+.btn-accent {
+  background-color: #B08D57;
+  color: #FFFFFF;
+}
+
+.btn-accent:hover {
+  background-color: #93703C; /* Darker gold */
+  transform: translateY(-2px);
+}
+
+/* Cards */
+.card {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.card h3 {
+    color: #2A4B7C;
+    margin-bottom: 0.75rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.card a {
+    font-weight: bold;
+    color: #B08D57;
+}
+
+.card .icon {
+    font-size: 2rem;
+    color: #B08D57;
+    margin-bottom: 1rem;
+}
+
+
+/* Navbar */
+.navbar {
+  background-color: #FFFFFF;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand .logo {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #2A4B7C;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #B08D57;
+  text-decoration: none;
+}
+
+.nav-toggle {
+  display: none; /* For mobile */
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #2A4B7C;
+  cursor: pointer;
+}
+
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(42, 75, 124, 0.8), rgba(42, 75, 124, 0.8)), url('images/placeholder-hero-bg.jpg') no-repeat center center/cover; /* Placeholder for background image */
+  color: #FFFFFF;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+
+.hero-section .sub-headline {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #E9ECEF;
+  color: #333333;
+  text-align: center;
+  padding: 40px 0;
+  margin-top: 60px;
+}
+
+.site-footer p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-nav-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-nav-links a {
+    color: #2A4B7C;
+}
+
+.footer-nav-links a:hover {
+    color: #B08D57;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 70px; /* Adjust based on navbar height */
+    left: 0;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section .sub-headline {
+    font-size: 1.2rem;
+  }
+}
