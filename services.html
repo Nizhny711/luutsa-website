@@ -4,68 +4,136 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Services - Dr. Luutsa Felix Edwine</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="modern-styles.css" />
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <div class="nav-brand">Dr. Luutsa</div>
-      <button class="nav-toggle" id="nav-toggle">&#9776;</button>
-      <ul class="nav-links" id="nav-links">
+      <div class="container">
+        <div class="nav-brand">
+          <img src="images/logo.jpg" alt="Dr. Luutsa Logo" class="logo" />
+        </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-header-section">
+    <div class="container">
+      <h1>Our Services</h1>
+      <p class="sub-headline">Specialized consulting and training to strengthen institutions and empower leaders.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="section-padding">
+      <div class="container">
+        <p class="text-center" style="margin-bottom: 3rem; font-size: 1.1rem; max-width: 700px; margin-left:auto; margin-right:auto;">
+          Dr. Luutsa Felix Edwine provides a range of expert services tailored to meet the unique needs of public sector organizations, academic institutions, and development partners. Our approach combines rigorous analysis, strategic thinking, and practical implementation to achieve sustainable results.
+        </p>
+        <div class="card-grid">
+          <div class="card">
+            <i class="fas fa-sitemap icon"></i>
+            <h3>Organizational Design & Transformation</h3>
+            <p>Redesigning organizational structures, workflows, and cultures to improve efficiency, alignment, and overall impact, fostering an environment of continuous improvement.</p>
+            <!-- <a href="services/organizational-design.html" class="btn btn-accent" style="margin-top: auto;">Learn More →</a> -->
+          </div>
+
+          <div class="card">
+            <i class="fas fa-bullseye icon"></i>
+            <h3>Strategic Planning & Management</h3>
+            <p>Facilitating comprehensive strategic plans, robust performance management systems, and clear organizational goal-setting processes to drive focused action.</p>
+            <!-- <a href="services/strategic-planning.html" class="btn btn-accent" style="margin-top: auto;">Learn More →</a> -->
+          </div>
+
+          <div class="card">
+            <i class="fas fa-landmark icon"></i>
+            <h3>Governance & Public Sector Reforms</h3>
+            <p>Advising county governments and public institutions on effective governance, decentralization strategies, and administrative reforms for enhanced public service delivery.</p>
+            <!-- <a href="services/governance-reforms.html" class="btn btn-accent" style="margin-top: auto;">Learn More →</a> -->
+          </div>
+          
+          <div class="card">
+            <i class="fas fa-users-cog icon"></i>
+            <h3>Capacity Building & Leadership Training</h3>
+            <p>Designing and delivering impactful workshops, targeted training sessions, and mentorship programs for institutions and individuals to build lasting leadership capabilities.</p>
+            <!-- <a href="services/capacity-building.html" class="btn btn-accent" style="margin-top: auto;">Learn More →</a> -->
+          </div>
+
+          <div class="card">
+            <i class="fas fa-search-plus icon"></i>
+            <h3>Research, Monitoring & Evaluation</h3>
+            <p>Conducting thorough impact assessments, insightful policy analysis, and institutional research to support evidence-based decision-making and program effectiveness.</p>
+            <!-- <a href="services/research-evaluation.html" class="btn btn-accent" style="margin-top: auto;">Learn More →</a> -->
+          </div>
+
+          <div class="card">
+            <i class="fas fa-chalkboard-teacher icon"></i>
+            <h3>Curriculum Development & Academic Program Review</h3>
+            <p>Assisting academic institutions in developing relevant curricula and reviewing programs to meet contemporary educational standards and industry needs.</p>
+            <!-- <a href="services/curriculum-development.html" class="btn btn-accent" style="margin-top: auto;">Learn More →</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section-padding" style="background-color: #E9ECEF;">
+        <div class="container text-center">
+            <h2>Ready to Enhance Your Organization's Impact?</h2>
+            <p style="max-width: 600px; margin: 0 auto 2rem auto;">Let's discuss how these services can be tailored to your specific needs and objectives. Contact Dr. Luutsa for an initial consultation.</p>
+            <a href="contact.html" class="btn btn-accent">Schedule a Consultation <i class="fas fa-calendar-check"></i></a>
+        </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-padding" style="padding-bottom: 20px; padding-top: 40px;">
+    <div class="container">
+      <p>&copy; 2024 Dr. Luutsa Felix Edwine. All rights reserved.</p>
+      <ul class="footer-nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="resources.html">Resources</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>    
-  </header>
-
-  <main>
-    <section>
-      <h1>Consulting Services</h1>
-      <p>Dr. Luutsa offers specialized consulting and training services designed to strengthen institutions, empower leaders, and drive impactful change.</p>
-
-      <div class="service-cards">
-        <div class="card">
-          <h2>Organizational Design & Transformation</h2>
-          <p>Redesigning organizational structures, workflows, and cultures to improve efficiency, alignment, and impact.</p>
-        </div>
-
-        <div class="card">
-          <h2>Strategic Planning & Management</h2>
-          <p>Facilitating strategic plans, performance management systems, and organizational goal-setting processes.</p>
-        </div>
-
-        <div class="card">
-          <h2>Governance & Public Sector Reforms</h2>
-          <p>Advising county governments and institutions on governance, decentralization, and administrative reforms.</p>
-        </div>
-
-        <div class="card">
-          <h2>Capacity Building & Leadership Training</h2>
-          <p>Designing and delivering workshops, training sessions, and mentorship programs for institutions and individuals.</p>
-        </div>
-
-        <div class="card">
-          <h2>Research, Monitoring & Evaluation</h2>
-          <p>Conducting impact assessments, policy analysis, and institutional research for evidence-based decisions.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2025 Dr. Luutsa Felix Edwine. All rights reserved.</p>
+    </div>
   </footer>
+
   <script>
     const toggleBtn = document.getElementById('nav-toggle');
     const navLinks = document.getElementById('nav-links');
   
     toggleBtn.addEventListener('click', () => {
       navLinks.classList.toggle('show');
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            if (this.pathname === window.location.pathname && this.hash) {
+                const targetElement = document.querySelector(this.hash);
+                if (targetElement) {
+                    e.preventDefault();
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
     });
   </script>  
 </body>

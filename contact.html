@@ -1,32 +1,121 @@
-<link rel="stylesheet" href="css/style.css" />
-<main>
-  <section class="contact-section fade-in">
-    <h1>Get in Touch</h1>
-    <p class="subtitle">Reach out for consultations, speaking engagements, or collaborations.</p>
-
-    <div class="contact-container">
-      <div class="contact-details">
-        <h2>Contact Details</h2>
-        <p><strong>Email:</strong> luutsafelix@yahoo.com</p>
-        <p><strong>Phone:</strong> +254 703 117 644</p>
-        <p><strong>Location:</strong> Eldoret, Kenya</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Dr. Luutsa - Dr. Luutsa Felix Edwine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="modern-styles.css" />
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-brand">
+          <img src="images/logo.jpg" alt="Dr. Luutsa Logo" class="logo" />
+        </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
+    </nav>
+  </header>
 
-      <form class="contact-form" action="https://formspree.io/f/yourID" method="POST">
-        <h2>Send a Message</h2>
-
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name" required />
-
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Your email" required />
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
+  <section class="section-padding" style="background-color: #2A4B7C; color: #FFFFFF; text-align: center;">
+    <div class="container">
+      <h1 style="color: #FFFFFF; margin-bottom: 0.5rem;">Get in Touch</h1>
+      <p class="sub-headline" style="font-size: 1.2rem; color: #E9ECEF; margin-bottom:0;">I'm here to help. Reach out for consultations, speaking engagements, or collaborations.</p>
     </div>
   </section>
-</main>
+
+  <main>
+    <section class="section-padding">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-details-card">
+            <h2>Contact Information</h2>
+            <p><i class="fas fa-envelope icon"></i> luutsafelix@yahoo.com</p>
+            <p><i class="fas fa-phone-alt icon"></i> +254 703 117 644</p>
+            <p><i class="fas fa-map-marker-alt icon"></i> Eldoret, Kenya</p>
+            <h3 style="margin-top: 2rem;">Office Hours</h3>
+            <p><i class="fas fa-clock icon"></i> Monday - Friday: 9:00 AM - 5:00 PM</p>
+            <p><i class="fas fa-info-circle icon"></i> Please allow up to 24-48 hours for a response to email inquiries.</p>
+          </div>
+
+          <div class="contact-form-card">
+            <h2>Send a Message</h2>
+            <form action="https://formspree.io/f/yourID" method="POST"> <!-- Replace yourID with actual Formspree ID -->
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g., Jane Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="e.g., jane.doe@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="e.g., Consultation Inquiry" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-padding" style="padding-bottom: 20px; padding-top: 40px;">
+    <div class="container">
+      <p>&copy; 2024 Dr. Luutsa Felix Edwine. All rights reserved.</p>
+      <ul class="footer-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
   
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+
+    // Optional: Smooth scroll for anchor links (if any were present)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            if (this.pathname === window.location.pathname && this.hash) {
+                const targetElement = document.querySelector(this.hash);
+                if (targetElement) {
+                    e.preventDefault();
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+  </script>  
+</body>
+</html>

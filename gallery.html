@@ -3,61 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gallery & Events - Dr. Luutsa Felix Edwine</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Gallery - Dr. Luutsa Felix Edwine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="modern-styles.css" />
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <div class="nav-brand">Dr. Luutsa</div>
-      <button class="nav-toggle" id="nav-toggle">&#9776;</button>
-      <ul class="nav-links" id="nav-links">
+      <div class="container">
+        <div class="nav-brand">
+          <img src="images/logo.jpg" alt="Dr. Luutsa Logo" class="logo" />
+        </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-header-section">
+    <div class="container">
+      <h1>Gallery</h1>
+      <p class="sub-headline">A visual journey through workshops, lectures, and key events.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="section-padding">
+      <div class="container">
+        <p class="text-center" style="margin-bottom: 3rem; font-size: 1.1rem; max-width: 700px; margin-left:auto; margin-right:auto;">
+          Explore moments from Dr. Luutsa's engagements, highlighting his work in leadership development, public sector reform, and community interaction.
+        </p>
+        <div class="gallery-grid">
+          <!-- Image paths are based on the original gallery.html. Ensure these images exist in the 'images' folder. -->
+          <div class="gallery-item">
+            <img src="images/event1.jpg" alt="Dr. Luutsa speaking at a leadership forum" />
+            <div class="caption">
+              <h4>Leadership Forum 2023</h4>
+              <p>Nairobi</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/event 2.jpg" alt="Training workshop photo - Mentee visit" />
+            <div class="caption">
+              <h4>Mentee Visit & Training</h4>
+              <p>Workshop Session</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/event3.jpg" alt="Panel discussion on Public Sector Innovation" />
+            <div class="caption">
+              <h4>Public Sector Innovation</h4>
+              <p>Panel Discussion</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/event4.jpg" alt="University lecture at Moi University" />
+            <div class="caption">
+              <h4>Guest Lecture</h4>
+              <p>Moi University</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/event 5.jpg" alt="Community engagement - Local Outreach" />
+            <div class="caption">
+              <h4>Community Engagement</h4>
+              <p>Local Outreach Program</p>
+            </div>
+          </div>
+          <!-- Add more items as needed. For example: -->
+          <div class="gallery-item">
+            <img src="images/placeholder-image.jpg" alt="Placeholder Image for Future Event" /> <!-- Placeholder if more images are not available -->
+            <div class="caption">
+              <h4>Future Event Placeholder</h4>
+              <p>Details to come</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-padding" style="padding-bottom: 20px; padding-top: 40px;">
+    <div class="container">
+      <p>&copy; 2024 Dr. Luutsa Felix Edwine. All rights reserved.</p>
+      <ul class="footer-nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="resources.html">Resources</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>    
-  </header>
-
-  <main>
-    <section>
-      <h1>Gallery & Events</h1>
-      <p>Snapshots from conferences, leadership forums, academic talks, and community engagements.</p>
-
-      <div class="gallery-grid">
-        <!-- Replace src with actual image filenames in your images/ folder -->
-        <div class="gallery-item">
-          <img src="images/event1.jpg" alt="Dr. Luutsa speaking at a leadership forum" />
-          <p>Leadership Forum 2023 – Nairobi</p>
-        </div>
-        <div class="gallery-item">
-          <img src="images/event 2.jpg" alt="Training workshop photo" />
-          <p>Mentee visit</p>
-        </div>
-        <div class="gallery-item">
-          <img src="images/event3.jpg" alt="Panel discussion" />
-          <p>Panel Discussion on Public Sector Innovation</p>
-        </div>
-        <div class="gallery-item">
-          <img src="images/event4.jpg" alt="University lecture" />
-          <p>Guest Lecture – Moi University</p>
-        </div>
-        <div class="gallery-item">
-          <img src="images/event 5.jpg" alt="Community engagement" />
-          <p>Community Engagement – Local Outreach</p>
-        </div>
-        <!-- Add more items as needed -->
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2025 Dr. Luutsa Felix Edwine. All rights reserved.</p>
+    </div>
   </footer>
+
   <script>
     const toggleBtn = document.getElementById('nav-toggle');
     const navLinks = document.getElementById('nav-links');
@@ -65,7 +116,20 @@
     toggleBtn.addEventListener('click', () => {
       navLinks.classList.toggle('show');
     });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            if (this.pathname === window.location.pathname && this.hash) {
+                const targetElement = document.querySelector(this.hash);
+                if (targetElement) {
+                    e.preventDefault();
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
   </script>  
 </body>
 </html>
-

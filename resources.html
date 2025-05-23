@@ -4,58 +4,136 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Resources - Dr. Luutsa Felix Edwine</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="modern-styles.css" />
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <div class="nav-brand">Dr. Luutsa</div>
-      <button class="nav-toggle" id="nav-toggle">&#9776;</button>
-      <ul class="nav-links" id="nav-links">
+      <div class="container">
+        <div class="nav-brand">
+          <img src="images/logo.jpg" alt="Dr. Luutsa Logo" class="logo" />
+        </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-header-section">
+    <div class="container">
+      <h1>Knowledge & Insights</h1>
+      <p class="sub-headline">Explore a collection of papers, policy briefs, and guides by Dr. Luutsa.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="section-padding">
+      <div class="container">
+        <p class="text-center" style="margin-bottom: 3rem; font-size: 1.1rem; max-width: 700px; margin-left:auto; margin-right:auto;">
+          Access a curated selection of Dr. Luutsa's publications and resources. These documents offer insights into strategic planning, governance, leadership, and public sector transformation.
+        </p>
+        <div class="card-grid">
+          <div class="card">
+            <i class="fas fa-file-alt icon"></i>
+            <h3>Strategic Planning in the Public Sector</h3>
+            <p>An in-depth paper on aligning institutional missions with development goals and community needs.</p>
+            <a href="resources/strategic-public-sector-planning.pdf" target="_blank" class="btn btn-primary" style="margin-top: auto;">Read Paper <i class="fas fa-external-link-alt"></i></a>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-balance-scale icon"></i>
+            <h3>Analysis of Devolved Governance Structures</h3>
+            <p>A policy brief assessing county governance frameworks in Kenya post-devolution.</p>
+            <a href="resources/devolved-governance-analysis.pdf" target="_blank" class="btn btn-primary" style="margin-top: auto;">View Brief <i class="fas fa-external-link-alt"></i></a>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-users-cog icon"></i>
+            <h3>Leadership & Mentorship Framework</h3>
+            <p>A guide used in training programs for building ethical, results-oriented leadership in the public sector.</p>
+            <a href="resources/leadership-mentorship-guide.pdf" target="_blank" class="btn btn-primary" style="margin-top: auto;">Download Guide <i class="fas fa-download"></i></a>
+          </div>
+          
+          <div class="card">
+            <i class="fas fa-book-reader icon"></i>
+            <h3>Effective Public Policy Implementation</h3>
+            <p>A case study analysis of successful policy rollouts and the critical factors involved.</p>
+            <a href="resources/placeholder-policy-implementation.pdf" target="_blank" class="btn btn-primary" style="margin-top: auto;">Explore Study <i class="fas fa-external-link-alt"></i></a>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-chart-bar icon"></i>
+            <h3>Performance Management in Public Institutions</h3>
+            <p>Key indicators and frameworks for enhancing accountability and service delivery.</p>
+            <a href="resources/placeholder-performance-management.pdf" target="_blank" class="btn btn-primary" style="margin-top: auto;">Access Insights <i class="fas fa-external-link-alt"></i></a>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-comments icon"></i>
+            <h3>Community Engagement Strategies</h3>
+            <p>Best practices for fostering participation and collaboration between public entities and communities.</p>
+            <a href="resources/placeholder-community-engagement.pdf" target="_blank" class="btn btn-primary" style="margin-top: auto;">Learn More <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section-padding" style="background-color: #E9ECEF;">
+        <div class="container text-center">
+            <h2>Looking for Specific Information?</h2>
+            <p style="max-width: 600px; margin: 0 auto 2rem auto;">If you have questions or need further resources on a particular topic related to governance or organizational development, please feel free to reach out.</p>
+            <a href="contact.html" class="btn btn-accent">Contact Dr. Luutsa <i class="fas fa-envelope"></i></a>
+        </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-padding" style="padding-bottom: 20px; padding-top: 40px;">
+    <div class="container">
+      <p>&copy; 2024 Dr. Luutsa Felix Edwine. All rights reserved.</p>
+      <ul class="footer-nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="resources.html">Resources</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>    
-  </header>
-
-  <main>
-    <section>
-      <h1>Resources & Publications</h1>
-      <p>Explore Dr. Luutsa’s latest thought pieces, papers, and presentations.</p>
-
-      <div class="resource-list">
-        <div class="resource">
-          <h2><a href="resources/strategic-public-sector-planning.pdf" target="_blank">Strategic Planning in the Public Sector</a></h2>
-          <p>An in-depth paper on aligning institutional missions with development goals and community needs.</p>
-        </div>
-
-        <div class="resource">
-          <h2><a href="resources/devolved-governance-analysis.pdf" target="_blank">Analysis of Devolved Governance Structures in Kenya</a></h2>
-          <p>A policy brief assessing county governance frameworks post-devolution.</p>
-        </div>
-
-        <div class="resource">
-          <h2><a href="resources/leadership-mentorship-guide.pdf" target="_blank">Leadership & Mentorship Framework</a></h2>
-          <p>A guide used in training programs for building ethical, results-oriented leadership in the public sector.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2025 Dr. Luutsa Felix Edwine. All rights reserved.</p>
+    </div>
   </footer>
+
   <script>
     const toggleBtn = document.getElementById('nav-toggle');
     const navLinks = document.getElementById('nav-links');
   
     toggleBtn.addEventListener('click', () => {
       navLinks.classList.toggle('show');
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            if (this.pathname === window.location.pathname && this.hash) {
+                const targetElement = document.querySelector(this.hash);
+                if (targetElement) {
+                    e.preventDefault();
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
     });
   </script>  
 </body>

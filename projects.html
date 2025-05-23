@@ -4,68 +4,137 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects - Dr. Luutsa Felix Edwine</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="modern-styles.css" />
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <div class="nav-brand">Dr. Luutsa</div>
-      <button class="nav-toggle" id="nav-toggle">&#9776;</button>
-      <ul class="nav-links" id="nav-links">
+      <div class="container">
+        <div class="nav-brand">
+          <img src="images/logo.jpg" alt="Dr. Luutsa Logo" class="logo" />
+        </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-header-section">
+    <div class="container">
+      <h1>Our Projects</h1>
+      <p class="sub-headline">A selection of key assignments and roles demonstrating impact in governance and institutional development.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="section-padding">
+      <div class="container">
+        <p class="text-center" style="margin-bottom: 3rem; font-size: 1.1rem; max-width: 700px; margin-left:auto; margin-right:auto;">
+          Dr. Luutsa has led and contributed to a variety of impactful projects. Below are highlights of his work, showcasing his expertise in strategic planning, governance reform, capacity building, and academic leadership.
+        </p>
+        <div class="card-grid">
+          <div class="card">
+            <i class="fas fa-landmark icon"></i>
+            <h3>Director of Administration</h3>
+            <h4>Office of the Governor, West Pokot</h4>
+            <p>Oversaw institutional development, administration strategy, and operational reforms. Played a key role in shaping governance structures and citizen service delivery.</p>
+            <!-- <a href="#">Read More →</a>  Optional link for detailed project page -->
+          </div>
+
+          <div class="card">
+            <i class="fas fa-lightbulb icon"></i>
+            <h3>Consultant – Strategic Planning</h3>
+            <h4>Trans Nzoia County</h4>
+            <p>Led the development of a five-year strategic plan focusing on public service efficiency, economic development, and policy implementation frameworks.</p>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-users-cog icon"></i>
+            <h3>Trainer – Capacity Building</h3>
+            <h4>County Assemblies</h4>
+            <p>Facilitated workshops on leadership, ethics, performance management, and legislative development for members of various county assemblies.</p>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-university icon"></i>
+            <h3>Senior Lecturer</h3>
+            <h4>Moi University</h4>
+            <p>Teaches Public Administration and Strategic Management. Guides postgraduate research and contributes to institutional academic development.</p>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-balance-scale icon"></i>
+            <h3>Governance Advisor</h3>
+            <h4>Kenya School of Government</h4>
+            <p>Contributed to curriculum development and national dialogue on devolved governance and leadership development strategies.</p>
+          </div>
+          
+          <div class="card">
+            <i class="fas fa-chart-line icon"></i>
+            <h3>Monitoring & Evaluation Framework</h3>
+            <h4>Various NGOs</h4>
+            <p>Designed and implemented M&E frameworks for development projects, ensuring accountability and performance tracking.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section-padding" style="background-color: #E9ECEF;">
+        <div class="container text-center">
+            <h2>Have a Project in Mind?</h2>
+            <p style="max-width: 600px; margin: 0 auto 2rem auto;">If you are looking for expertise in governance, strategic planning, or institutional reform, Dr. Luutsa can help guide your project to success.</p>
+            <a href="contact.html" class="btn btn-accent">Discuss Your Project <i class="fas fa-comments"></i></a>
+        </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-padding" style="padding-bottom: 20px; padding-top: 40px;">
+    <div class="container">
+      <p>&copy; 2024 Dr. Luutsa Felix Edwine. All rights reserved.</p>
+      <ul class="footer-nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="resources.html">Resources</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h1>Highlighted Projects & Roles</h1>
-      <p>Below is a selection of key roles and consulting assignments that showcase Dr. Luutsa’s expertise in governance, transformation, and institutional development.</p>
-
-      <div class="project-list">
-        <div class="project">
-          <h2>Director of Administration – Office of the Governor, West Pokot</h2>
-          <p>Oversaw institutional development, administration strategy, and operational reforms. Played a key role in shaping governance structures and citizen service delivery.</p>
-        </div>
-
-        <div class="project">
-          <h2>Consultant – Strategic Planning, Trans Nzoia County</h2>
-          <p>Led the development of a five-year strategic plan focusing on public service efficiency, economic development, and policy implementation frameworks.</p>
-        </div>
-
-        <div class="project">
-          <h2>Trainer – Capacity Building for County Assemblies</h2>
-          <p>Facilitated workshops on leadership, ethics, performance management, and legislative development for members of various county assemblies.</p>
-        </div>
-
-        <div class="project">
-          <h2>Senior Lecturer – Moi University</h2>
-          <p>Teaches Public Administration and Strategic Management. Guides postgraduate research and contributes to institutional academic development.</p>
-        </div>
-
-        <div class="project">
-          <h2>Governance Advisor – Kenya School of Government</h2>
-          <p>Contributed to curriculum development and national dialogue on devolved governance and leadership development strategies.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2025 Dr. Luutsa Felix Edwine. All rights reserved.</p>
+    </div>
   </footer>
+
   <script>
     const toggleBtn = document.getElementById('nav-toggle');
     const navLinks = document.getElementById('nav-links');
   
     toggleBtn.addEventListener('click', () => {
       navLinks.classList.toggle('show');
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            if (this.pathname === window.location.pathname && this.hash) {
+                const targetElement = document.querySelector(this.hash);
+                if (targetElement) {
+                    e.preventDefault();
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
     });
   </script>  
 </body>
